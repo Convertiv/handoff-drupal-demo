@@ -58,3 +58,13 @@ https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-to
 
 3. Then run `npm run fetch`. This will fetch the tokens and install them into
 the Drupal theme.
+
+4. Clear your drupal cache and the tokens should take effect.
+
+To see them working, create a page with two buttons -
+
+```html
+<a href="btn btn-primary">Primary Button</a>
+
+<a href="btn btn-secondary">Secondary Button</a>
+```
