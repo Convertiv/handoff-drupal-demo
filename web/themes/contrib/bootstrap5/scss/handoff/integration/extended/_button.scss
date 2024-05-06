@@ -10,6 +10,7 @@
 }
 
 // Check if variants map exists and then create modifier classes
+@if variable-exists(button-type-map) and ($button-type-map != null) {
 	@each $variant in $button-type-map {
 		.btn-#{$variant} {
 			background: var( --button-#{$variant}-background );
@@ -59,7 +60,7 @@
 			}
 		}
 	}
-
+}
 
 // Check if sizes map exists and then create modifier classes
 @if variable-exists(button-size-map) and ($button-size-map != null) {

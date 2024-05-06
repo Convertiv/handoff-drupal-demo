@@ -30,17 +30,14 @@
 @import '../tokens/types/effects';
 @import '../tokens/types/colors';
 @import '../tokens/types/button';
-@import '../tokens/types/input';
 @import '../tokens/sass/typography';
 @import '../tokens/sass/effects';
 @import '../tokens/sass/colors';
 @import '../tokens/sass/button';
-@import '../tokens/sass/input';
 @import '../tokens/css/typography';
 @import '../tokens/css/effects';
 @import '../tokens/css/colors';
 @import '../tokens/css/button';
-@import '../tokens/css/input';
 
 
 // 3. Project Variables
@@ -49,7 +46,6 @@
 $prefix: '';
 @import 'variables';
 @import 'maps/button';
-@import 'maps/input';
 
 // 4. Bootstrap Variables
 //    Load Bootstrap variables
@@ -105,4 +101,3 @@ $prefix: '';
 // ------------------------------------------------------------------
 
 @import 'extended/button';
-@import 'extended/input';

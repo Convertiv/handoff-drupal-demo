@@ -1,0 +1,25 @@
+
+@import 'handoff/integration/variables-default';
+
+@import 'handoff/tokens/types/typography';
+@import 'handoff/tokens/types/effects';
+@import 'handoff/tokens/types/colors';
+@import 'handoff/tokens/types/button';
+@import 'handoff/tokens/sass/typography';
+@import 'handoff/tokens/sass/effects';
+@import 'handoff/tokens/sass/colors';
+@import 'handoff/tokens/sass/button';
+@import 'handoff/tokens/css/typography';
+@import 'handoff/tokens/css/effects';
+@import 'handoff/tokens/css/colors';
+@import 'handoff/tokens/css/button';
+
+
+// 3. Project Variables
+// ------------------------------------------------------------------
+
+$prefix: '';
+@import 'handoff/integration/variables';
+@import 'handoff/integration/maps/button';
+
+

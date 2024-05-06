@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "fetch": "tsx handoff/fetch.ts && cd web/themes/contrib/bootstrap5 && sass scss/style.scss css/style.css && sass scss/ck5style.scss css/ck5style.css && sass scss/style-52.scss css/style-52.css"
+    "fetch": "tsx handoff/fetch.ts && npm run build",
+    "build": "cd web/themes/contrib/bootstrap5 && sass scss/style.scss css/style.css && sass scss/ck5style.scss css/ck5style.css && sass scss/style-52.scss css/style-52.css"
   },
   "author": "",
   "license": "ISC",

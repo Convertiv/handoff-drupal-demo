@@ -1,87 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
-@import "variables_bootstrap";
-@import "variables_drupal";
-@import "../dist/bootstrap/5.3.3/scss/bootstrap";
-@import "mixins";
 
-@import "handoff/integration/variables-default";
-
-
-@import "handoff/tokens/types/typography";
-@import "handoff/tokens/types/effects";
-@import "handoff/tokens/types/colors";
-@import "handoff/tokens/types/button";
-@import "handoff/tokens/sass/typography";
-@import "handoff/tokens/sass/effects";
-@import "handoff/tokens/sass/colors";
-@import "handoff/tokens/sass/button";
-@import "handoff/tokens/css/typography";
-@import "handoff/tokens/css/effects";
-@import "handoff/tokens/css/colors";
-@import "handoff/tokens/css/button";
-
-// 3. Project Variables
-// ------------------------------------------------------------------
-
-$prefix: "";
-@import "handoff/integration/variables";
-@import "handoff/integration/extended/reboot";
-
-
-@import "drupal";
-@import "bootstrap_fix";
-
-@import "handoff/integration/maps/button";
-
-@each $variant in $button-type-map {
-  .btn-#{$variant} {
-    background: var(--button-#{$variant}-background);
-    background: var(--button-#{$variant}-background);
-    @each $state in $button-state-map {
-      @if $state != "" {
-        $state: "-" + $state;
-      }
-      --#{$prefix}btn#{$state}-color: var(--button-#{$variant}#{$state}-color);
-      --#{$prefix}btn#{$state}-font-weight: var(
-        --button-#{$variant}#{$state}-font-weight
-      );
-      --#{$prefix}btn#{$state}-bg: var(
-        --button-#{$variant}#{$state}-background
-      );
-      --#{$prefix}btn#{$state}-border-color: var(
-        --button-#{$variant}#{$state}-border-color
-      );
-      --#{$prefix}btn#{$state}-border-style: var(
-        --button-#{$variant}#{$state}-border-style
-      );
-      --#{$prefix}btn#{$state}-border-radius: var(
-        --button-#{$variant}#{$state}-border-radius
-      );
-      --#{$prefix}btn#{$state}-box-shadow: var(
-        --button-#{$variant}#{$state}-box-shadow
-      );
-    }
-
-    &:hover {
-      background: var(--button-#{$variant}-hover-background);
-    }
-
-    &:hover,
-    &:focus-visible {
-      font-weight: var(--#{$prefix}btn-hover-font-weight);
-      border-radius: var(--#{$prefix}btn-hover-border-radius);
-      box-shadow: var(--#{$prefix}btn-hover-box-shadow);
-    }
-  }
-  @each $state in $button-state-map {
-    @if $state != "" {
-      $state: "-" + $state;
-    }
-    @if $state == "" {
-      $state: "default";
-    }
-    .btn-#{$variant}:#{$state} {
-      background: var(--button-#{$variant}#{$state}-background);
-    }
-  }
-}
+@import 'variables_bootstrap';
+@import 'variables_drupal';
+@import '../dist/bootstrap/5.3.3/scss/bootstrap';
+@import 'handoff';
+@import 'mixins';
+@import 'drupal';
+@import 'bootstrap_fix';
+@import 'handoff/integration/extended/button';

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap");
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -13358,109 +13357,6 @@ textarea.form-control-lg {
  *
  *  This file overwrites default Bootstrap variables.
  */
-/* =============================================================================
-   REBOOT (extended/_reboot.scss)
-   ========================================================================== */
-h1, .h1 {
-  font-size: calc(1.475rem + 2.7vw);
-  font-family: var(--typography-heading-1-font-family);
-  font-weight: var(--typography-heading-1-font-weight);
-  line-height: var(--typography-heading-1-line-height);
-  letter-spacing: var(--typography-heading-1-letter-spacing);
-}
-@media (min-width: 1200px) {
-  h1, .h1 {
-    font-size: 3.5rem;
-  }
-}
-
-h2, .h2 {
-  font-size: calc(1.375rem + 1.5vw);
-  font-family: var(--typography-heading-2-font-family);
-  font-weight: var(--typography-heading-2-font-weight);
-  line-height: var(--typography-heading-2-line-height);
-  letter-spacing: var(--typography-heading-2-letter-spacing);
-}
-@media (min-width: 1200px) {
-  h2, .h2 {
-    font-size: 2.5rem;
-  }
-}
-
-h3, .h3 {
-  font-size: calc(1.325rem + 0.9vw);
-  font-family: var(--typography-heading-3-font-family);
-  font-weight: var(--typography-heading-3-font-weight);
-  line-height: var(--typography-heading-3-line-height);
-  letter-spacing: var(--typography-heading-3-letter-spacing);
-}
-@media (min-width: 1200px) {
-  h3, .h3 {
-    font-size: 2rem;
-  }
-}
-
-h4, .h4 {
-  font-size: calc(1.3rem + 0.6vw);
-  font-family: var(--typography-heading-4-font-family);
-  font-weight: var(--typography-heading-4-font-weight);
-  line-height: var(--typography-heading-4-line-height);
-  letter-spacing: var(--typography-heading-4-letter-spacing);
-}
-@media (min-width: 1200px) {
-  h4, .h4 {
-    font-size: 1.75rem;
-  }
-}
-
-h5, .h5 {
-  font-size: calc(1.275rem + 0.3vw);
-  font-family: var(--typography-heading-5-font-family);
-  font-weight: var(--typography-heading-5-font-weight);
-  line-height: var(--typography-heading-5-line-height);
-  letter-spacing: var(--typography-heading-5-letter-spacing);
-}
-@media (min-width: 1200px) {
-  h5, .h5 {
-    font-size: 1.5rem;
-  }
-}
-
-h6, .form-wrapper.accordion .accordion-item h2, .form-wrapper.accordion .accordion-item .h2, .h6 {
-  font-size: 1.25rem;
-  font-family: var(--typography-heading-6-font-family);
-  font-weight: var(--typography-heading-6-font-weight);
-  line-height: var(--typography-heading-6-line-height);
-  letter-spacing: var(--typography-heading-6-letter-spacing);
-}
-
-blockquote {
-  font-size: calc(1.275rem + 0.3vw);
-  font-family: var(--typography-blockquote-font-family);
-  font-weight: var(--typography-blockquote-font-weight);
-  line-height: var(--typography-blockquote-line-height);
-  letter-spacing: var(--typography-blockquote-letter-spacing);
-  font-style: italic;
-}
-@media (min-width: 1200px) {
-  blockquote {
-    font-size: 1.5rem;
-  }
-}
-
-a {
-  transition: all 0.2s ease-in-out;
-}
-
-strong {
-  font-weight: 700;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .ui-widget-content a {
   color: #0d6efd;
   text-decoration: underline;
@@ -13484,10 +13380,10 @@ button.link {
 }
 
 .button--small {
-  --bs-btn-padding-y: 0.25rem;
-  --bs-btn-padding-x: 0.5rem;
-  --bs-btn-font-size: 0.875rem;
-  --bs-btn-border-radius: var(--bs-border-radius-sm);
+  --bs-btn-padding-y: 11px;
+  --bs-btn-padding-x: 16px;
+  --bs-btn-font-size: 0.75rem;
+  --bs-btn-border-radius: 4px;
 }
 
 a.button {
@@ -13504,7 +13400,7 @@ a.button.button--primary {
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #0a58ca;
   --bs-btn-active-border-color: #0a53be;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-active-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #0d6efd;
   --bs-btn-disabled-border-color: #0d6efd;
@@ -13520,7 +13416,7 @@ a.button.button--danger {
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #b02a37;
   --bs-btn-active-border-color: #a52834;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-active-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #dc3545;
   --bs-btn-disabled-border-color: #dc3545;
@@ -13536,16 +13432,16 @@ a.button.button-action {
   --bs-btn-active-color: #000;
   --bs-btn-active-bg: #3dd5f3;
   --bs-btn-active-border-color: #25cff2;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-active-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
   --bs-btn-disabled-color: #000;
   --bs-btn-disabled-bg: #0dcaf0;
   --bs-btn-disabled-border-color: #0dcaf0;
 }
 a.button.button--small {
-  --bs-btn-padding-y: 0.25rem;
-  --bs-btn-padding-x: 0.5rem;
-  --bs-btn-font-size: 0.875rem;
-  --bs-btn-border-radius: var(--bs-border-radius-sm);
+  --bs-btn-padding-y: 11px;
+  --bs-btn-padding-x: 16px;
+  --bs-btn-font-size: 0.75rem;
+  --bs-btn-border-radius: 4px;
 }
 
 .btn-primary a {
@@ -13705,7 +13601,7 @@ a[class=button] {
   --bs-btn-active-color: #000;
   --bs-btn-active-bg: #f9fafb;
   --bs-btn-active-border-color: #f9fafb;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-active-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
   --bs-btn-disabled-color: #000;
   --bs-btn-disabled-bg: #f8f9fa;
   --bs-btn-disabled-border-color: #f8f9fa;
@@ -14009,7 +13905,7 @@ table {
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #0a58ca;
   --bs-btn-active-border-color: #0a53be;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-active-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #0d6efd;
   --bs-btn-disabled-border-color: #0d6efd;
@@ -14307,66 +14203,38 @@ code {
   overflow-y: auto;
 }
 
+/* =============================================================================
+   BUTTONS (extended/_buttons.scss)
+   ========================================================================== */
+.btn, button.link, .button, a.button, .node-preview-container .node-preview-backlink {
+  letter-spacing: var(--button-md-letter-spacing);
+  text-decoration: var(--button-md-text-decoration);
+  text-transform: var(--button-md-text-transform);
+}
+
 .btn-custom-type {
   background: var(--button-custom-type-background);
-  background: var(--button-custom-type-background);
-  --bs-btn-hover-color: var(--button-custom-type-hover-color);
-  --bs-btn-hover-font-weight: var(
-    --button-custom-type-hover-font-weight
-  );
-  --bs-btn-hover-bg: var(
-    --button-custom-type-hover-background
-  );
-  --bs-btn-hover-border-color: var(
-    --button-custom-type-hover-border-color
-  );
-  --bs-btn-hover-border-style: var(
-    --button-custom-type-hover-border-style
-  );
-  --bs-btn-hover-border-radius: var(
-    --button-custom-type-hover-border-radius
-  );
-  --bs-btn-hover-box-shadow: var(
-    --button-custom-type-hover-box-shadow
-  );
-  --bs-btn-color: var(--button-custom-type-color);
-  --bs-btn-font-weight: var(
-    --button-custom-type-font-weight
-  );
-  --bs-btn-bg: var(
-    --button-custom-type-background
-  );
-  --bs-btn-border-color: var(
-    --button-custom-type-border-color
-  );
-  --bs-btn-border-style: var(
-    --button-custom-type-border-style
-  );
-  --bs-btn-border-radius: var(
-    --button-custom-type-border-radius
-  );
-  --bs-btn-box-shadow: var(
-    --button-custom-type-box-shadow
-  );
-  --bs-btn-disabled-color: var(--button-custom-type-disabled-color);
-  --bs-btn-disabled-font-weight: var(
-    --button-custom-type-disabled-font-weight
-  );
-  --bs-btn-disabled-bg: var(
-    --button-custom-type-disabled-background
-  );
-  --bs-btn-disabled-border-color: var(
-    --button-custom-type-disabled-border-color
-  );
-  --bs-btn-disabled-border-style: var(
-    --button-custom-type-disabled-border-style
-  );
-  --bs-btn-disabled-border-radius: var(
-    --button-custom-type-disabled-border-radius
-  );
-  --bs-btn-disabled-box-shadow: var(
-    --button-custom-type-disabled-box-shadow
-  );
+  --bs-btn-hover-color: var( --button-custom-type-hover-color );
+  --bs-btn-hover-font-weight: var( --button-custom-type-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-custom-type-hover-background );
+  --bs-btn-hover-border-color: var( --button-custom-type-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-custom-type-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-custom-type-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-custom-type-hover-box-shadow );
+  --bs-btn-color: var( --button-custom-type-color );
+  --bs-btn-font-weight: var( --button-custom-type-font-weight );
+  --bs-btn-bg: var( --button-custom-type-background );
+  --bs-btn-border-color: var( --button-custom-type-border-color );
+  --bs-btn-border-style: var( --button-custom-type-border-style );
+  --bs-btn-border-radius: var( --button-custom-type-border-radius );
+  --bs-btn-box-shadow: var( --button-custom-type-box-shadow );
+  --bs-btn-disabled-color: var( --button-custom-type-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-custom-type-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-custom-type-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-custom-type-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-custom-type-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-custom-type-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-custom-type-disabled-box-shadow );
 }
 .btn-custom-type:hover {
   background: var(--button-custom-type-hover-background);
@@ -14389,66 +14257,54 @@ code {
   background: var(--button-custom-type-disabled-background);
 }
 
+[data-theme=dark] .btn-custom-type {
+  background: var(--button-custom-type-dark-background);
+  --bs-btn-hover-color: var( --button-custom-type-dark-hover-color );
+  --bs-btn-hover-font-weight: var( --button-custom-type-dark-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-custom-type-dark-hover-background );
+  --bs-btn-hover-border-color: var( --button-custom-type-dark-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-custom-type-dark-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-custom-type-dark-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-custom-type-dark-hover-box-shadow );
+  --bs-btn-color: var( --button-custom-type-dark-color );
+  --bs-btn-font-weight: var( --button-custom-type-dark-font-weight );
+  --bs-btn-bg: var( --button-custom-type-dark-background );
+  --bs-btn-border-color: var( --button-custom-type-dark-border-color );
+  --bs-btn-border-style: var( --button-custom-type-dark-border-style );
+  --bs-btn-border-radius: var( --button-custom-type-dark-border-radius );
+  --bs-btn-box-shadow: var( --button-custom-type-dark-box-shadow );
+  --bs-btn-disabled-color: var( --button-custom-type-dark-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-custom-type-dark-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-custom-type-dark-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-custom-type-dark-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-custom-type-dark-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-custom-type-dark-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-custom-type-dark-disabled-box-shadow );
+}
+
 .btn-outline-secondary {
   background: var(--button-outline-secondary-background);
-  background: var(--button-outline-secondary-background);
-  --bs-btn-hover-color: var(--button-outline-secondary-hover-color);
-  --bs-btn-hover-font-weight: var(
-    --button-outline-secondary-hover-font-weight
-  );
-  --bs-btn-hover-bg: var(
-    --button-outline-secondary-hover-background
-  );
-  --bs-btn-hover-border-color: var(
-    --button-outline-secondary-hover-border-color
-  );
-  --bs-btn-hover-border-style: var(
-    --button-outline-secondary-hover-border-style
-  );
-  --bs-btn-hover-border-radius: var(
-    --button-outline-secondary-hover-border-radius
-  );
-  --bs-btn-hover-box-shadow: var(
-    --button-outline-secondary-hover-box-shadow
-  );
-  --bs-btn-color: var(--button-outline-secondary-color);
-  --bs-btn-font-weight: var(
-    --button-outline-secondary-font-weight
-  );
-  --bs-btn-bg: var(
-    --button-outline-secondary-background
-  );
-  --bs-btn-border-color: var(
-    --button-outline-secondary-border-color
-  );
-  --bs-btn-border-style: var(
-    --button-outline-secondary-border-style
-  );
-  --bs-btn-border-radius: var(
-    --button-outline-secondary-border-radius
-  );
-  --bs-btn-box-shadow: var(
-    --button-outline-secondary-box-shadow
-  );
-  --bs-btn-disabled-color: var(--button-outline-secondary-disabled-color);
-  --bs-btn-disabled-font-weight: var(
-    --button-outline-secondary-disabled-font-weight
-  );
-  --bs-btn-disabled-bg: var(
-    --button-outline-secondary-disabled-background
-  );
-  --bs-btn-disabled-border-color: var(
-    --button-outline-secondary-disabled-border-color
-  );
-  --bs-btn-disabled-border-style: var(
-    --button-outline-secondary-disabled-border-style
-  );
-  --bs-btn-disabled-border-radius: var(
-    --button-outline-secondary-disabled-border-radius
-  );
-  --bs-btn-disabled-box-shadow: var(
-    --button-outline-secondary-disabled-box-shadow
-  );
+  --bs-btn-hover-color: var( --button-outline-secondary-hover-color );
+  --bs-btn-hover-font-weight: var( --button-outline-secondary-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-outline-secondary-hover-background );
+  --bs-btn-hover-border-color: var( --button-outline-secondary-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-outline-secondary-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-outline-secondary-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-outline-secondary-hover-box-shadow );
+  --bs-btn-color: var( --button-outline-secondary-color );
+  --bs-btn-font-weight: var( --button-outline-secondary-font-weight );
+  --bs-btn-bg: var( --button-outline-secondary-background );
+  --bs-btn-border-color: var( --button-outline-secondary-border-color );
+  --bs-btn-border-style: var( --button-outline-secondary-border-style );
+  --bs-btn-border-radius: var( --button-outline-secondary-border-radius );
+  --bs-btn-box-shadow: var( --button-outline-secondary-box-shadow );
+  --bs-btn-disabled-color: var( --button-outline-secondary-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-outline-secondary-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-outline-secondary-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-outline-secondary-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-outline-secondary-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-outline-secondary-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-outline-secondary-disabled-box-shadow );
 }
 .btn-outline-secondary:hover {
   background: var(--button-outline-secondary-hover-background);
@@ -14471,66 +14327,54 @@ code {
   background: var(--button-outline-secondary-disabled-background);
 }
 
+[data-theme=dark] .btn-outline-secondary {
+  background: var(--button-outline-secondary-dark-background);
+  --bs-btn-hover-color: var( --button-outline-secondary-dark-hover-color );
+  --bs-btn-hover-font-weight: var( --button-outline-secondary-dark-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-outline-secondary-dark-hover-background );
+  --bs-btn-hover-border-color: var( --button-outline-secondary-dark-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-outline-secondary-dark-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-outline-secondary-dark-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-outline-secondary-dark-hover-box-shadow );
+  --bs-btn-color: var( --button-outline-secondary-dark-color );
+  --bs-btn-font-weight: var( --button-outline-secondary-dark-font-weight );
+  --bs-btn-bg: var( --button-outline-secondary-dark-background );
+  --bs-btn-border-color: var( --button-outline-secondary-dark-border-color );
+  --bs-btn-border-style: var( --button-outline-secondary-dark-border-style );
+  --bs-btn-border-radius: var( --button-outline-secondary-dark-border-radius );
+  --bs-btn-box-shadow: var( --button-outline-secondary-dark-box-shadow );
+  --bs-btn-disabled-color: var( --button-outline-secondary-dark-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-outline-secondary-dark-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-outline-secondary-dark-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-outline-secondary-dark-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-outline-secondary-dark-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-outline-secondary-dark-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-outline-secondary-dark-disabled-box-shadow );
+}
+
 .btn-danger {
   background: var(--button-danger-background);
-  background: var(--button-danger-background);
-  --bs-btn-hover-color: var(--button-danger-hover-color);
-  --bs-btn-hover-font-weight: var(
-    --button-danger-hover-font-weight
-  );
-  --bs-btn-hover-bg: var(
-    --button-danger-hover-background
-  );
-  --bs-btn-hover-border-color: var(
-    --button-danger-hover-border-color
-  );
-  --bs-btn-hover-border-style: var(
-    --button-danger-hover-border-style
-  );
-  --bs-btn-hover-border-radius: var(
-    --button-danger-hover-border-radius
-  );
-  --bs-btn-hover-box-shadow: var(
-    --button-danger-hover-box-shadow
-  );
-  --bs-btn-color: var(--button-danger-color);
-  --bs-btn-font-weight: var(
-    --button-danger-font-weight
-  );
-  --bs-btn-bg: var(
-    --button-danger-background
-  );
-  --bs-btn-border-color: var(
-    --button-danger-border-color
-  );
-  --bs-btn-border-style: var(
-    --button-danger-border-style
-  );
-  --bs-btn-border-radius: var(
-    --button-danger-border-radius
-  );
-  --bs-btn-box-shadow: var(
-    --button-danger-box-shadow
-  );
-  --bs-btn-disabled-color: var(--button-danger-disabled-color);
-  --bs-btn-disabled-font-weight: var(
-    --button-danger-disabled-font-weight
-  );
-  --bs-btn-disabled-bg: var(
-    --button-danger-disabled-background
-  );
-  --bs-btn-disabled-border-color: var(
-    --button-danger-disabled-border-color
-  );
-  --bs-btn-disabled-border-style: var(
-    --button-danger-disabled-border-style
-  );
-  --bs-btn-disabled-border-radius: var(
-    --button-danger-disabled-border-radius
-  );
-  --bs-btn-disabled-box-shadow: var(
-    --button-danger-disabled-box-shadow
-  );
+  --bs-btn-hover-color: var( --button-danger-hover-color );
+  --bs-btn-hover-font-weight: var( --button-danger-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-danger-hover-background );
+  --bs-btn-hover-border-color: var( --button-danger-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-danger-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-danger-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-danger-hover-box-shadow );
+  --bs-btn-color: var( --button-danger-color );
+  --bs-btn-font-weight: var( --button-danger-font-weight );
+  --bs-btn-bg: var( --button-danger-background );
+  --bs-btn-border-color: var( --button-danger-border-color );
+  --bs-btn-border-style: var( --button-danger-border-style );
+  --bs-btn-border-radius: var( --button-danger-border-radius );
+  --bs-btn-box-shadow: var( --button-danger-box-shadow );
+  --bs-btn-disabled-color: var( --button-danger-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-danger-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-danger-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-danger-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-danger-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-danger-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-danger-disabled-box-shadow );
 }
 .btn-danger:hover {
   background: var(--button-danger-hover-background);
@@ -14553,66 +14397,54 @@ code {
   background: var(--button-danger-disabled-background);
 }
 
+[data-theme=dark] .btn-danger {
+  background: var(--button-danger-dark-background);
+  --bs-btn-hover-color: var( --button-danger-dark-hover-color );
+  --bs-btn-hover-font-weight: var( --button-danger-dark-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-danger-dark-hover-background );
+  --bs-btn-hover-border-color: var( --button-danger-dark-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-danger-dark-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-danger-dark-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-danger-dark-hover-box-shadow );
+  --bs-btn-color: var( --button-danger-dark-color );
+  --bs-btn-font-weight: var( --button-danger-dark-font-weight );
+  --bs-btn-bg: var( --button-danger-dark-background );
+  --bs-btn-border-color: var( --button-danger-dark-border-color );
+  --bs-btn-border-style: var( --button-danger-dark-border-style );
+  --bs-btn-border-radius: var( --button-danger-dark-border-radius );
+  --bs-btn-box-shadow: var( --button-danger-dark-box-shadow );
+  --bs-btn-disabled-color: var( --button-danger-dark-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-danger-dark-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-danger-dark-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-danger-dark-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-danger-dark-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-danger-dark-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-danger-dark-disabled-box-shadow );
+}
+
 .btn-light {
   background: var(--button-light-background);
-  background: var(--button-light-background);
-  --bs-btn-hover-color: var(--button-light-hover-color);
-  --bs-btn-hover-font-weight: var(
-    --button-light-hover-font-weight
-  );
-  --bs-btn-hover-bg: var(
-    --button-light-hover-background
-  );
-  --bs-btn-hover-border-color: var(
-    --button-light-hover-border-color
-  );
-  --bs-btn-hover-border-style: var(
-    --button-light-hover-border-style
-  );
-  --bs-btn-hover-border-radius: var(
-    --button-light-hover-border-radius
-  );
-  --bs-btn-hover-box-shadow: var(
-    --button-light-hover-box-shadow
-  );
-  --bs-btn-color: var(--button-light-color);
-  --bs-btn-font-weight: var(
-    --button-light-font-weight
-  );
-  --bs-btn-bg: var(
-    --button-light-background
-  );
-  --bs-btn-border-color: var(
-    --button-light-border-color
-  );
-  --bs-btn-border-style: var(
-    --button-light-border-style
-  );
-  --bs-btn-border-radius: var(
-    --button-light-border-radius
-  );
-  --bs-btn-box-shadow: var(
-    --button-light-box-shadow
-  );
-  --bs-btn-disabled-color: var(--button-light-disabled-color);
-  --bs-btn-disabled-font-weight: var(
-    --button-light-disabled-font-weight
-  );
-  --bs-btn-disabled-bg: var(
-    --button-light-disabled-background
-  );
-  --bs-btn-disabled-border-color: var(
-    --button-light-disabled-border-color
-  );
-  --bs-btn-disabled-border-style: var(
-    --button-light-disabled-border-style
-  );
-  --bs-btn-disabled-border-radius: var(
-    --button-light-disabled-border-radius
-  );
-  --bs-btn-disabled-box-shadow: var(
-    --button-light-disabled-box-shadow
-  );
+  --bs-btn-hover-color: var( --button-light-hover-color );
+  --bs-btn-hover-font-weight: var( --button-light-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-light-hover-background );
+  --bs-btn-hover-border-color: var( --button-light-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-light-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-light-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-light-hover-box-shadow );
+  --bs-btn-color: var( --button-light-color );
+  --bs-btn-font-weight: var( --button-light-font-weight );
+  --bs-btn-bg: var( --button-light-background );
+  --bs-btn-border-color: var( --button-light-border-color );
+  --bs-btn-border-style: var( --button-light-border-style );
+  --bs-btn-border-radius: var( --button-light-border-radius );
+  --bs-btn-box-shadow: var( --button-light-box-shadow );
+  --bs-btn-disabled-color: var( --button-light-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-light-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-light-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-light-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-light-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-light-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-light-disabled-box-shadow );
 }
 .btn-light:hover {
   background: var(--button-light-hover-background);
@@ -14635,66 +14467,54 @@ code {
   background: var(--button-light-disabled-background);
 }
 
+[data-theme=dark] .btn-light {
+  background: var(--button-light-dark-background);
+  --bs-btn-hover-color: var( --button-light-dark-hover-color );
+  --bs-btn-hover-font-weight: var( --button-light-dark-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-light-dark-hover-background );
+  --bs-btn-hover-border-color: var( --button-light-dark-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-light-dark-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-light-dark-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-light-dark-hover-box-shadow );
+  --bs-btn-color: var( --button-light-dark-color );
+  --bs-btn-font-weight: var( --button-light-dark-font-weight );
+  --bs-btn-bg: var( --button-light-dark-background );
+  --bs-btn-border-color: var( --button-light-dark-border-color );
+  --bs-btn-border-style: var( --button-light-dark-border-style );
+  --bs-btn-border-radius: var( --button-light-dark-border-radius );
+  --bs-btn-box-shadow: var( --button-light-dark-box-shadow );
+  --bs-btn-disabled-color: var( --button-light-dark-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-light-dark-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-light-dark-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-light-dark-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-light-dark-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-light-dark-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-light-dark-disabled-box-shadow );
+}
+
 .btn-dark {
   background: var(--button-dark-background);
-  background: var(--button-dark-background);
-  --bs-btn-hover-color: var(--button-dark-hover-color);
-  --bs-btn-hover-font-weight: var(
-    --button-dark-hover-font-weight
-  );
-  --bs-btn-hover-bg: var(
-    --button-dark-hover-background
-  );
-  --bs-btn-hover-border-color: var(
-    --button-dark-hover-border-color
-  );
-  --bs-btn-hover-border-style: var(
-    --button-dark-hover-border-style
-  );
-  --bs-btn-hover-border-radius: var(
-    --button-dark-hover-border-radius
-  );
-  --bs-btn-hover-box-shadow: var(
-    --button-dark-hover-box-shadow
-  );
-  --bs-btn-color: var(--button-dark-color);
-  --bs-btn-font-weight: var(
-    --button-dark-font-weight
-  );
-  --bs-btn-bg: var(
-    --button-dark-background
-  );
-  --bs-btn-border-color: var(
-    --button-dark-border-color
-  );
-  --bs-btn-border-style: var(
-    --button-dark-border-style
-  );
-  --bs-btn-border-radius: var(
-    --button-dark-border-radius
-  );
-  --bs-btn-box-shadow: var(
-    --button-dark-box-shadow
-  );
-  --bs-btn-disabled-color: var(--button-dark-disabled-color);
-  --bs-btn-disabled-font-weight: var(
-    --button-dark-disabled-font-weight
-  );
-  --bs-btn-disabled-bg: var(
-    --button-dark-disabled-background
-  );
-  --bs-btn-disabled-border-color: var(
-    --button-dark-disabled-border-color
-  );
-  --bs-btn-disabled-border-style: var(
-    --button-dark-disabled-border-style
-  );
-  --bs-btn-disabled-border-radius: var(
-    --button-dark-disabled-border-radius
-  );
-  --bs-btn-disabled-box-shadow: var(
-    --button-dark-disabled-box-shadow
-  );
+  --bs-btn-hover-color: var( --button-dark-hover-color );
+  --bs-btn-hover-font-weight: var( --button-dark-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-dark-hover-background );
+  --bs-btn-hover-border-color: var( --button-dark-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-dark-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-dark-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-dark-hover-box-shadow );
+  --bs-btn-color: var( --button-dark-color );
+  --bs-btn-font-weight: var( --button-dark-font-weight );
+  --bs-btn-bg: var( --button-dark-background );
+  --bs-btn-border-color: var( --button-dark-border-color );
+  --bs-btn-border-style: var( --button-dark-border-style );
+  --bs-btn-border-radius: var( --button-dark-border-radius );
+  --bs-btn-box-shadow: var( --button-dark-box-shadow );
+  --bs-btn-disabled-color: var( --button-dark-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-dark-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-dark-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-dark-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-dark-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-dark-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-dark-disabled-box-shadow );
 }
 .btn-dark:hover {
   background: var(--button-dark-hover-background);
@@ -14717,66 +14537,54 @@ code {
   background: var(--button-dark-disabled-background);
 }
 
+[data-theme=dark] .btn-dark {
+  background: var(--button-dark-dark-background);
+  --bs-btn-hover-color: var( --button-dark-dark-hover-color );
+  --bs-btn-hover-font-weight: var( --button-dark-dark-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-dark-dark-hover-background );
+  --bs-btn-hover-border-color: var( --button-dark-dark-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-dark-dark-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-dark-dark-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-dark-dark-hover-box-shadow );
+  --bs-btn-color: var( --button-dark-dark-color );
+  --bs-btn-font-weight: var( --button-dark-dark-font-weight );
+  --bs-btn-bg: var( --button-dark-dark-background );
+  --bs-btn-border-color: var( --button-dark-dark-border-color );
+  --bs-btn-border-style: var( --button-dark-dark-border-style );
+  --bs-btn-border-radius: var( --button-dark-dark-border-radius );
+  --bs-btn-box-shadow: var( --button-dark-dark-box-shadow );
+  --bs-btn-disabled-color: var( --button-dark-dark-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-dark-dark-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-dark-dark-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-dark-dark-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-dark-dark-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-dark-dark-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-dark-dark-disabled-box-shadow );
+}
+
 .btn-secondary {
   background: var(--button-secondary-background);
-  background: var(--button-secondary-background);
-  --bs-btn-hover-color: var(--button-secondary-hover-color);
-  --bs-btn-hover-font-weight: var(
-    --button-secondary-hover-font-weight
-  );
-  --bs-btn-hover-bg: var(
-    --button-secondary-hover-background
-  );
-  --bs-btn-hover-border-color: var(
-    --button-secondary-hover-border-color
-  );
-  --bs-btn-hover-border-style: var(
-    --button-secondary-hover-border-style
-  );
-  --bs-btn-hover-border-radius: var(
-    --button-secondary-hover-border-radius
-  );
-  --bs-btn-hover-box-shadow: var(
-    --button-secondary-hover-box-shadow
-  );
-  --bs-btn-color: var(--button-secondary-color);
-  --bs-btn-font-weight: var(
-    --button-secondary-font-weight
-  );
-  --bs-btn-bg: var(
-    --button-secondary-background
-  );
-  --bs-btn-border-color: var(
-    --button-secondary-border-color
-  );
-  --bs-btn-border-style: var(
-    --button-secondary-border-style
-  );
-  --bs-btn-border-radius: var(
-    --button-secondary-border-radius
-  );
-  --bs-btn-box-shadow: var(
-    --button-secondary-box-shadow
-  );
-  --bs-btn-disabled-color: var(--button-secondary-disabled-color);
-  --bs-btn-disabled-font-weight: var(
-    --button-secondary-disabled-font-weight
-  );
-  --bs-btn-disabled-bg: var(
-    --button-secondary-disabled-background
-  );
-  --bs-btn-disabled-border-color: var(
-    --button-secondary-disabled-border-color
-  );
-  --bs-btn-disabled-border-style: var(
-    --button-secondary-disabled-border-style
-  );
-  --bs-btn-disabled-border-radius: var(
-    --button-secondary-disabled-border-radius
-  );
-  --bs-btn-disabled-box-shadow: var(
-    --button-secondary-disabled-box-shadow
-  );
+  --bs-btn-hover-color: var( --button-secondary-hover-color );
+  --bs-btn-hover-font-weight: var( --button-secondary-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-secondary-hover-background );
+  --bs-btn-hover-border-color: var( --button-secondary-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-secondary-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-secondary-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-secondary-hover-box-shadow );
+  --bs-btn-color: var( --button-secondary-color );
+  --bs-btn-font-weight: var( --button-secondary-font-weight );
+  --bs-btn-bg: var( --button-secondary-background );
+  --bs-btn-border-color: var( --button-secondary-border-color );
+  --bs-btn-border-style: var( --button-secondary-border-style );
+  --bs-btn-border-radius: var( --button-secondary-border-radius );
+  --bs-btn-box-shadow: var( --button-secondary-box-shadow );
+  --bs-btn-disabled-color: var( --button-secondary-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-secondary-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-secondary-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-secondary-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-secondary-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-secondary-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-secondary-disabled-box-shadow );
 }
 .btn-secondary:hover {
   background: var(--button-secondary-hover-background);
@@ -14799,66 +14607,54 @@ code {
   background: var(--button-secondary-disabled-background);
 }
 
+[data-theme=dark] .btn-secondary {
+  background: var(--button-secondary-dark-background);
+  --bs-btn-hover-color: var( --button-secondary-dark-hover-color );
+  --bs-btn-hover-font-weight: var( --button-secondary-dark-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-secondary-dark-hover-background );
+  --bs-btn-hover-border-color: var( --button-secondary-dark-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-secondary-dark-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-secondary-dark-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-secondary-dark-hover-box-shadow );
+  --bs-btn-color: var( --button-secondary-dark-color );
+  --bs-btn-font-weight: var( --button-secondary-dark-font-weight );
+  --bs-btn-bg: var( --button-secondary-dark-background );
+  --bs-btn-border-color: var( --button-secondary-dark-border-color );
+  --bs-btn-border-style: var( --button-secondary-dark-border-style );
+  --bs-btn-border-radius: var( --button-secondary-dark-border-radius );
+  --bs-btn-box-shadow: var( --button-secondary-dark-box-shadow );
+  --bs-btn-disabled-color: var( --button-secondary-dark-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-secondary-dark-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-secondary-dark-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-secondary-dark-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-secondary-dark-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-secondary-dark-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-secondary-dark-disabled-box-shadow );
+}
+
 .btn-primary {
   background: var(--button-primary-background);
-  background: var(--button-primary-background);
-  --bs-btn-hover-color: var(--button-primary-hover-color);
-  --bs-btn-hover-font-weight: var(
-    --button-primary-hover-font-weight
-  );
-  --bs-btn-hover-bg: var(
-    --button-primary-hover-background
-  );
-  --bs-btn-hover-border-color: var(
-    --button-primary-hover-border-color
-  );
-  --bs-btn-hover-border-style: var(
-    --button-primary-hover-border-style
-  );
-  --bs-btn-hover-border-radius: var(
-    --button-primary-hover-border-radius
-  );
-  --bs-btn-hover-box-shadow: var(
-    --button-primary-hover-box-shadow
-  );
-  --bs-btn-color: var(--button-primary-color);
-  --bs-btn-font-weight: var(
-    --button-primary-font-weight
-  );
-  --bs-btn-bg: var(
-    --button-primary-background
-  );
-  --bs-btn-border-color: var(
-    --button-primary-border-color
-  );
-  --bs-btn-border-style: var(
-    --button-primary-border-style
-  );
-  --bs-btn-border-radius: var(
-    --button-primary-border-radius
-  );
-  --bs-btn-box-shadow: var(
-    --button-primary-box-shadow
-  );
-  --bs-btn-disabled-color: var(--button-primary-disabled-color);
-  --bs-btn-disabled-font-weight: var(
-    --button-primary-disabled-font-weight
-  );
-  --bs-btn-disabled-bg: var(
-    --button-primary-disabled-background
-  );
-  --bs-btn-disabled-border-color: var(
-    --button-primary-disabled-border-color
-  );
-  --bs-btn-disabled-border-style: var(
-    --button-primary-disabled-border-style
-  );
-  --bs-btn-disabled-border-radius: var(
-    --button-primary-disabled-border-radius
-  );
-  --bs-btn-disabled-box-shadow: var(
-    --button-primary-disabled-box-shadow
-  );
+  --bs-btn-hover-color: var( --button-primary-hover-color );
+  --bs-btn-hover-font-weight: var( --button-primary-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-primary-hover-background );
+  --bs-btn-hover-border-color: var( --button-primary-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-primary-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-primary-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-primary-hover-box-shadow );
+  --bs-btn-color: var( --button-primary-color );
+  --bs-btn-font-weight: var( --button-primary-font-weight );
+  --bs-btn-bg: var( --button-primary-background );
+  --bs-btn-border-color: var( --button-primary-border-color );
+  --bs-btn-border-style: var( --button-primary-border-style );
+  --bs-btn-border-radius: var( --button-primary-border-radius );
+  --bs-btn-box-shadow: var( --button-primary-box-shadow );
+  --bs-btn-disabled-color: var( --button-primary-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-primary-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-primary-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-primary-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-primary-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-primary-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-primary-disabled-box-shadow );
 }
 .btn-primary:hover {
   background: var(--button-primary-hover-background);
@@ -14879,6 +14675,46 @@ code {
 
 .btn-primary:-disabled {
   background: var(--button-primary-disabled-background);
+}
+
+[data-theme=dark] .btn-primary {
+  background: var(--button-primary-dark-background);
+  --bs-btn-hover-color: var( --button-primary-dark-hover-color );
+  --bs-btn-hover-font-weight: var( --button-primary-dark-hover-font-weight );
+  --bs-btn-hover-bg: var( --button-primary-dark-hover-background );
+  --bs-btn-hover-border-color: var( --button-primary-dark-hover-border-color );
+  --bs-btn-hover-border-style: var( --button-primary-dark-hover-border-style );
+  --bs-btn-hover-border-radius: var( --button-primary-dark-hover-border-radius );
+  --bs-btn-hover-box-shadow: var( --button-primary-dark-hover-box-shadow );
+  --bs-btn-color: var( --button-primary-dark-color );
+  --bs-btn-font-weight: var( --button-primary-dark-font-weight );
+  --bs-btn-bg: var( --button-primary-dark-background );
+  --bs-btn-border-color: var( --button-primary-dark-border-color );
+  --bs-btn-border-style: var( --button-primary-dark-border-style );
+  --bs-btn-border-radius: var( --button-primary-dark-border-radius );
+  --bs-btn-box-shadow: var( --button-primary-dark-box-shadow );
+  --bs-btn-disabled-color: var( --button-primary-dark-disabled-color );
+  --bs-btn-disabled-font-weight: var( --button-primary-dark-disabled-font-weight );
+  --bs-btn-disabled-bg: var( --button-primary-dark-disabled-background );
+  --bs-btn-disabled-border-color: var( --button-primary-dark-disabled-border-color );
+  --bs-btn-disabled-border-style: var( --button-primary-dark-disabled-border-style );
+  --bs-btn-disabled-border-radius: var( --button-primary-dark-disabled-border-radius );
+  --bs-btn-disabled-box-shadow: var( --button-primary-dark-disabled-box-shadow );
+}
+
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > button.link, .btn-group-sm > .button, .node-preview-container .btn-group-sm > .node-preview-backlink {
+  --bs-border-width: $btn-border-width-sm;
+  --bs-line-height: $btn-line-height-sm;
+}
+
+.btn-md {
+  --bs-border-width: $btn-border-width-md;
+  --bs-line-height: $btn-line-height-md;
+}
+
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > button.link, .btn-group-lg > .button, .node-preview-container .btn-group-lg > .node-preview-backlink {
+  --bs-border-width: $btn-border-width-lg;
+  --bs-line-height: $btn-line-height-lg;
 }
 
 /*# sourceMappingURL=style.css.map */
