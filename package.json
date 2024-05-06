@@ -1,0 +1,15 @@
+{
+  "name": "drupal-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fetch": "tsx handoff/fetch.ts && cd web/themes/contrib/bootstrap5 && sass scss/style.scss css/style.css && sass scss/ck5style.scss css/ck5style.css && sass scss/style-52.scss css/style-52.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handoff-app": "^0.10.0",
+    "tsx": "^4.7.3"
+  }
+}
